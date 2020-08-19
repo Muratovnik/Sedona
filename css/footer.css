@@ -7,7 +7,7 @@
     justify-content: space-around;
     align-items: center;
 
-    padding: 40px 0;
+    padding: 40px 10%;
 
     position: absolute;
 
@@ -22,9 +22,6 @@
 }
 
 .hashtag {
-
-    width: 33.33%;
-
     padding: 0;
     margin: 0;
 
@@ -33,11 +30,11 @@
 
     font-weight: 700;
 
-    text-align: center;
+    width: 33.33%;
 }
 
 .footer-social {
-    width: 33.33%;
+  width: 33.33%;
 }
 
 .social-list {
@@ -46,6 +43,7 @@
     list-style: none;
     display: flex;
     justify-content: center;
+
 }
 
 .social-list li {
@@ -55,10 +53,6 @@
 .social-list li:first-child {
     margin: 0;
 }
-
-
-
-
 
 .social-list a{
     display: flex;
@@ -95,31 +89,52 @@
 .footer-copyright {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
     width: 33.33%;
 }
 
-.footer-copyright a {
-    height: 40px;
-    display: block;
+.copyright-developer,
+.copyright-author{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
 }
 
-.footer-copyright svg {
-    
+.copyright-developer{
+  margin-right: 15px;
+}
+
+.copyright-link{
+  font-size: 21px;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+
+  color: rgba(0, 0, 0, .8);
 }
 
 .copyright-text{
-    margin-right: 5px;
+  margin-bottom: 5px;
 }
 
-.copyright-icon:hover svg,
-.copyright-icon:focus svg {
-    fill: #81b3d2;
+.copyright-icon{
+  width: 115px;
+  height: 40px;
+}
+
+.copyright-link:hover,
+.copyright-link:focus{
+    color: rgba(129,179,210, .8);
     transition: .2s ease-in;
 }
 
-.copyright-icon:active svg {
-    fill: #000000;
+.copyright-link:active {
+    color: rgba(0, 0, 0, 1);
     opacity: .3;
 }
