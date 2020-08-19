@@ -1,0 +1,106 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.content-box-component {
+    box-sizing: content-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+
+    position: relative;
+
+    outline: #d3e05b;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.container {
+    margin: 0 auto;
+    min-width: 786px;
+    max-width: 1200px;
+
+    position: relative;
+
+    background-color: #ffffff;
+
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);
+}
+
+.headline1 {
+    margin: 0;
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.headline2 {
+    display: block;
+    margin: 0;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+h2{
+    display: block;
+    margin: 0;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="date"]::-webkit-clear-button {
+    display: none;
+    height: 0;
+    width: 0;
+}
